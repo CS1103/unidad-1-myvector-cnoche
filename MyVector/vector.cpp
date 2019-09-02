@@ -49,7 +49,7 @@ void UTEC::MyVector::insert(int &pos, int item) {
         }else if (i==pos){
             temp[i]=item;
         }else if(i>pos){
-            temp[i+1]=data[i]
+            temp[i+1]=data[i];
         };
     };
     //borrar el vec. anterior
@@ -66,7 +66,7 @@ void UTEC::MyVector::pop_back() {
     //insertar vector anterior al nuevo temp
     temp=new int [nelem-1];
     for (int i=0; i<nelem-1; ++i){
-        temp[i]=data[i]
+        temp[i]=data[i];
     }
     //borrar el vec. anterior
     delete [] data;
@@ -77,7 +77,7 @@ void UTEC::MyVector::pop_back() {
 }
 //operator [] (Done)
 int UTEC::MyVector::operator[](int &pos) {
-    return data[pos]
+    return data[pos];
 };
 //Elimina un elemento de una posición determinada (Done)
 void UTEC::MyVector::erase(int &pos) {
