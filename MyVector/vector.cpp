@@ -100,10 +100,6 @@ void UTEC::MyVector::erase(int &pos) {
 }
 //Operator + (Done)
 UTEC::MyVector UTEC::MyVector::operator+(const UTEC::MyVector &vec) {
-    MyVector temp(vec);
-    for(int i = 0; i < vec.nelem; i++){
-        temp.vector[i] += this->vector[i];
-    }
-    return temp;
+    
 }
 
